@@ -1,0 +1,15 @@
+{
+  "name": "stylus-to-postcss",
+  "version": "1.0.0",
+  "description": "Convert Stylus files to postcss-scss syntax",
+  "main": "index.js",
+  "repository": "https://github.com/sc0rp10/stylus-to-postcss",
+  "author": "Konstantin Zamyakin <dev@weblab.pro>",
+  "bin" : { "stylus-to-postcss" : "./index.js" },
+  "license": "MIT",
+  "dependencies": {
+    "postcss": "^5.2.16",
+    "postcss-scss": "^0.4.1",
+    "sugarss": "^0.2.0"
+  }
+}
