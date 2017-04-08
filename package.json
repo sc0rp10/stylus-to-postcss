@@ -6,6 +6,9 @@
   "repository": "https://github.com/sc0rp10/stylus-to-postcss",
   "author": "Konstantin Zamyakin <dev@weblab.pro>",
   "bin" : { "stylus-to-postcss" : "./index.js" },
+  "scripts": {
+    "test": "./test/index.js"
+  },
   "license": "MIT",
   "dependencies": {
     "postcss": "^5.2.16",
