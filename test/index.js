@@ -26,6 +26,8 @@ const src = `body
 .bar_5
     &:hover
         color red
+.bar-{$index}
+    color red
 `;
 
 const expected = `body {
@@ -62,6 +64,9 @@ const expected = `body {
     &:hover {
         color: red;
     }
+}
+.bar-\${index} {
+    color: red;
 }
 `;
 
