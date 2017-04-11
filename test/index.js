@@ -17,12 +17,21 @@ const src = `body
 .baz
     &_mod
         position absolute
+.bar_2
+    width 123px;
+.bar_3
+    width: 123px
+.bar_4
+    width: 123px;
+.bar_5
+    &:hover
+        color red
 `;
 
 const expected = `body {
     font: 14px/1.5 Helvetica, arial, sans-serif;
     & #logo {
-        border-radius: 5px;;
+        border-radius: 5px;
     }
 }
 .foo {
@@ -38,6 +47,20 @@ const expected = `body {
 .baz {
     &_mod {
         position: absolute;
+    }
+}
+.bar_2 {
+    width: 123px;
+}
+.bar_3 {
+    width: 123px;
+}
+.bar_4 {
+    width: 123px;
+}
+.bar_5 {
+    &:hover {
+        color: red;
     }
 }
 `;

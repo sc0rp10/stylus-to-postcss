@@ -11,4 +11,9 @@ if (!filename) {
 
 const str = fs.readFileSync(filename).toString();
 
-process.stdout.write(exporter(str));
+try {
+    // process.stdout.write(exporter(str));
+    exporter(str);
+} catch (e) {
+    process.stdout.write(`error at processing '${filename}':\n${e.stack}`);
+}
