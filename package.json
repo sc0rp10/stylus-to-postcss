@@ -1,6 +1,6 @@
 {
   "name": "stylus-to-postcss",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Convert Stylus files to postcss-scss syntax",
   "main": "index.js",
   "repository": "https://github.com/sc0rp10/stylus-to-postcss",
