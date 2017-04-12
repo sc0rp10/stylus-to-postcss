@@ -28,6 +28,11 @@ const src = `body
         color red
 .bar-{$index}
     color red
+.bar_6
+    color $color
+.bar_7
+    .bar_8
+        color red
 `;
 
 const expected = `body {
@@ -67,6 +72,14 @@ const expected = `body {
 }
 .bar-\${index} {
     color: red;
+}
+.bar_6 {
+    color: $color;
+}
+.bar_7 {
+    & .bar_8 {
+        color: red;
+    }
 }
 `;
 
